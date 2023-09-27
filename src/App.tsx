@@ -1,7 +1,7 @@
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
 import Projects from "./pages/Projects";
-import Todos from "./pages/Todos";
+import Tasks from "./pages/Tasks";
 import Navigation from "./components/Navigation";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Navigation />
       <div className="page-wrap">
         <Routes>
-          <Route path="/projects/:name/todos" element={<Todos />} />
+          <Route path="/projects/:name/todos" element={<Tasks />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
