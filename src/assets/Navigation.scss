@@ -1,0 +1,19 @@
+.container-nav {
+  background-color: #fff;
+
+  padding: 15px;
+
+  height: 100vh;
+
+  width: 300px;
+}
+.navigation {
+  &-link {
+    color: #333;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}

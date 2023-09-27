@@ -3,15 +3,32 @@ import { Link } from "react-router-dom";
 
 function Projects() {
   return (
-    <div>
-      <ul>
-        <li>
-          <h2>Project 1</h2>
-          <Link to="/projects/one/todos">todos 1</Link>
+    <div className="projects-page">
+      <h1 className="title">Список проектов</h1>
+      <ul className="projects">
+        <li className="project">
+          <h2 className="project-title">Проект 1</h2>
+          <Link to="/projects/one/todos" className="todos-link">
+            Список дел
+          </Link>
         </li>
-        <li>
-          <h2>Project 1</h2>
-          <Link to="/projects/two/todos">todos 2</Link>
+        <li className="project">
+          <h2 className="project-title">Проект 2</h2>
+          <Link to="/projects/two/todos" className="todos-link">
+            Список дел
+          </Link>
+        </li>
+        <li className="project">
+          <h2 className="project-title">Проект 3</h2>
+          <Link to="/projects/three/todos" className="todos-link">
+            Список дел
+          </Link>
+        </li>
+        <li className="project">
+          <h2 className="project-title">Проект 4</h2>
+          <Link to="/projects/four/todos" className="todos-link">
+            Список дел
+          </Link>
         </li>
       </ul>
     </div>
