@@ -1,6 +1,7 @@
 import "../assets/Tasks.scss";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Taskslist from "../components/Taskslist";
 
 function Tasks() {
   let { name } = useParams();
@@ -10,8 +11,10 @@ function Tasks() {
     console.log(1);
   });
   return (
-    <div>
-      <h1>todos</h1>
+    <div className="tasks-page">
+      <Taskslist title="Queue"  tasks={["1", "2", "3"]} />
+      <Taskslist title="Development"  tasks={["1", "2", "3"]} />
+      <Taskslist title="Done"  tasks={["1", "2", "3"]} />
     </div>
   );
 }
