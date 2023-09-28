@@ -4,6 +4,7 @@ import Projects from "./pages/Projects";
 import Tasks from "./pages/Tasks";
 import Navigation from "./components/Navigation";
 
+
 function App() {
   return (
     <div className="App">
